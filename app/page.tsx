@@ -296,11 +296,11 @@ export default function Home() {
             <div className="section-badge mb-5 w-fit">
               Preisrechner
             </div>
-            <h2 id="preisrechner-cta-heading" className="section-title mb-5">
+            <h2 id="preisrechner-cta-heading" className="section-title mb-5" style={{ color: '#F0F4FF' }}>
               Was kostet{' '}
               <span className="gradient-text">dein Führerschein?</span>
             </h2>
-            <p className="section-subtitle mb-8">
+            <p className="section-subtitle mb-8" style={{ color: '#CBD5E1' }}>
               Mit unserem interaktiven Preisrechner bekommst du eine transparente Kostenübersicht für jede Führerscheinklasse —
               individuell auf dich angepasst.
             </p>
@@ -490,11 +490,11 @@ export default function Home() {
           aria-hidden="true"
         />
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
-          <h2 id="final-cta-heading" className="section-title mb-5">
+          <h2 id="final-cta-heading" className="section-title mb-5" style={{ color: '#F0F4FF' }}>
             Bereit für deinen{' '}
             <span className="gradient-text">Führerschein?</span>
           </h2>
-          <p className="section-subtitle mx-auto text-center mb-8">
+          <p className="section-subtitle mx-auto text-center mb-8" style={{ color: '#CBD5E1' }}>
             Kontaktiere uns jetzt für eine kostenfreie Erstberatung.
             Wir rufen auch gerne zurück — einfach WhatsApp schreiben.
           </p>
