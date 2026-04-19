@@ -393,7 +393,7 @@ export default function PriceCalculator() {
                   </p>
                   {[
                     { label: 'Fixkosten', value: fixedTotal - extraTotal, total: grandTotal, color: '#00D4FF' },
-                    { label: 'Übungsfahrstunden', value: extraTotal, total: grandTotal, color: '#8B5CF6' },
+                    { label: 'Übungsfahrstunden', value: extraTotal, total: grandTotal, color: '#005A8A' },
                   ].map((bar) => (
                     <div key={bar.label}>
                       <div className="flex justify-between text-xs text-muted mb-1">

@@ -54,7 +54,7 @@ const klassen = [
     name: 'Klasse B196',
     untertitel: 'Motorrad ohne Prüfung',
     alter: 'Ab 25 Jahren, mind. 5 Jahre Klasse B',
-    farbe: '#8B5CF6',
+    farbe: '#005A8A',
     beschreibung:
       'Die Klasse B196 ermöglicht das Führen von Motorrädern bis 125 ccm ohne separate Prüfung. Voraussetzung sind mindestens 5 Jahre Fahrpraxis mit Klasse B und das Mindestalter von 25 Jahren.',
     inhalte: [
@@ -126,7 +126,7 @@ const klassen = [
     name: 'Klasse A',
     untertitel: 'Motorrad unbeschränkt',
     alter: 'Ab 24 Jahren (oder 21 J. mit 2 Jahren A2)',
-    farbe: '#8B5CF6',
+    farbe: '#005A8A',
     beschreibung:
       'Die Klasse A ist der unbeschränkte Motorradführerschein. Alle Motorräder, alle Leistungsklassen. Das ultimative Ziel für Motorradenthusiasten.',
     inhalte: [

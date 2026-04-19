@@ -68,7 +68,7 @@ const config: Config = {
           linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px),
           linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px)
         `,
-        'gradient-accent': 'linear-gradient(135deg, #00D4FF, #8B5CF6)',
+        'gradient-accent': 'linear-gradient(135deg, #0077B6, #004A80)',
         'gradient-dark': 'linear-gradient(135deg, #0A0C14, #111827)',
         'card-shimmer': 'linear-gradient(90deg, transparent 0%, rgba(0,212,255,0.05) 50%, transparent 100%)',
       },

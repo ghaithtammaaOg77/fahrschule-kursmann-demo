@@ -109,26 +109,17 @@ export default function Home() {
           HERO
           ========================================= */}
       <section
-        className="relative min-h-screen flex flex-col justify-center overflow-hidden noise-texture"
-        style={{ backgroundColor: '#0A0C14', color: '#F0F4FF' }}
+        className="relative min-h-screen flex flex-col justify-center overflow-hidden"
         aria-labelledby="hero-heading"
       >
-        {/* Animated grid background */}
-        <div className="absolute inset-0 hero-grid-bg" aria-hidden="true" />
-
-        {/* Gradient overlay */}
+        {/* Subtle blue tint overlay */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 pointer-events-none"
           style={{
-            background: 'radial-gradient(ellipse at 50% 0%, rgba(0,212,255,0.06) 0%, transparent 60%), linear-gradient(180deg, transparent 60%, #0A0C14 100%)',
+            background: 'radial-gradient(ellipse at 70% 30%, rgba(0,119,182,0.07) 0%, transparent 60%)',
           }}
           aria-hidden="true"
         />
-
-        {/* Glowing orbs */}
-        <div className="hero-orb hero-orb-1" aria-hidden="true" />
-        <div className="hero-orb hero-orb-2" aria-hidden="true" />
-        <div className="hero-orb hero-orb-3" aria-hidden="true" />
 
         {/* Hero Content */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
@@ -185,7 +176,7 @@ export default function Home() {
 
             {/* Trust bar */}
             <div
-              className="flex flex-wrap items-center gap-6 mt-10 pt-10 border-t border-white/8"
+              className="flex flex-wrap items-center gap-6 mt-10 pt-10 border-t border-black/10"
               style={{ animation: 'fadeInUp 0.6s ease 0.4s both' }}
             >
               {[
@@ -388,7 +379,7 @@ export default function Home() {
                 {/* Main card */}
                 <div
                   className="glass-card rounded-2xl p-8 border border-black/8"
-                  style={{ background: 'linear-gradient(135deg, rgba(0,119,182,0.04), rgba(139,92,246,0.04))' }}
+                  style={{ background: 'linear-gradient(135deg, rgba(0,119,182,0.05), rgba(0,74,128,0.03))' }}
                 >
                   <div className="text-center mb-6">
                     <div className="text-6xl mb-3" aria-hidden="true">🏆</div>
