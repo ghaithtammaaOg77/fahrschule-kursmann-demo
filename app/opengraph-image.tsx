@@ -1,8 +1,8 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'Fahrschule Kursmann – Führerschein in Landsberg am Lech'
-export const size = { width: 1200, height: 630 }
+export const alt = 'Fahrschule Kursmann'
+export const size = { width: 1200, height: 1200 }
 export const contentType = 'image/png'
 
 export default async function Image() {
@@ -10,44 +10,59 @@ export default async function Image() {
     (
       <div
         style={{
+          background: '#0077B6',
           width: '100%',
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'flex-start',
+          alignItems: 'center',
           justifyContent: 'center',
-          padding: '80px',
-          backgroundColor: '#F8FAFC',
+          gap: '48px',
         }}
       >
+        {/* FK Badge */}
         <div
           style={{
-            width: '64px',
-            height: '6px',
-            backgroundColor: '#0077B6',
-            marginBottom: '36px',
-          }}
-        />
-        <div
-          style={{
-            fontSize: 76,
-            fontWeight: 700,
-            color: '#0F172A',
-            lineHeight: 1.1,
-            marginBottom: '24px',
+            width: '320px',
+            height: '320px',
+            borderRadius: '72px',
+            background: '#FFFFFF',
             display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: '#0077B6',
+            fontSize: '140px',
+            fontWeight: 900,
+            letterSpacing: '-4px',
           }}
         >
-          Fahrschule Kursmann
+          FK
         </div>
+
+        {/* Name */}
         <div
           style={{
-            fontSize: 34,
-            color: '#64748B',
+            color: '#FFFFFF',
+            fontSize: '52px',
+            fontWeight: 700,
+            textAlign: 'center',
+            letterSpacing: '2px',
             display: 'flex',
           }}
         >
-          Führerschein in Landsberg am Lech
+          FAHRSCHULE KURSMANN
+        </div>
+
+        {/* City */}
+        <div
+          style={{
+            color: 'rgba(255,255,255,0.7)',
+            fontSize: '36px',
+            fontWeight: 500,
+            display: 'flex',
+          }}
+        >
+          Landsberg am Lech
         </div>
       </div>
     ),
