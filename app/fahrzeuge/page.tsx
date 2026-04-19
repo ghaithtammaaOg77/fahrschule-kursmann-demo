@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Fahrzeuge',
+  title: 'Fahrzeuge – Pkw & Motorräder für die Fahrausbildung',
   description:
     'Die Fahrzeugflotte von Fahrschule Kursmann in Landsberg am Lech – moderne Pkw und Motorräder für optimale Fahrausbildung.',
   alternates: { canonical: 'https://fahrschule-kursmann.de/fahrzeuge' },

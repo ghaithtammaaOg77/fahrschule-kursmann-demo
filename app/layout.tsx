@@ -48,6 +48,14 @@ export const metadata: Metadata = {
     title: 'Fahrschule Kursmann – Führerschein | Landsberg am Lech',
     description:
       'Alle Führerscheinklassen, persönliche Betreuung und faire Preise. Deine Fahrschule in Landsberg am Lech.',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Fahrschule Kursmann – Führerschein in Landsberg am Lech',
+      },
+    ],
   },
   robots: {
     index: true,
@@ -66,7 +74,7 @@ const schemaJsonLd = {
   description:
     'Fahrschule in Landsberg am Lech mit allen Führerscheinklassen – B, BE, B196, AM, A1, A2, A.',
   url: 'https://fahrschule-kursmann.de',
-  telephone: '+4981914478​23',
+  telephone: '+498191447823',
   email: 'info@fahrschule-kursmann.de',
   address: {
     '@type': 'PostalAddress',
@@ -127,7 +135,6 @@ export default function RootLayout({
   return (
     <html lang="de" className={`${fraunces.variable} ${dmSans.variable}`}>
       <head>
-        <link rel="canonical" href="https://fahrschule-kursmann.de/" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaJsonLd) }}
