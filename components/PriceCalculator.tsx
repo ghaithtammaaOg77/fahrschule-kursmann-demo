@@ -202,7 +202,7 @@ export default function PriceCalculator() {
     // Pflichtfahrten (B196)
     if (klasse.pflichtfahrten) {
       items.push({
-        label: klasse.pflichtfahrten.label,
+        label: `${klasse.pflichtfahrten.label} (à ${formatEur(klasse.pflichtfahrten.preis)})`,
         value: klasse.pflichtfahrten.anzahl * klasse.pflichtfahrten.preis,
         sub: true,
       })
@@ -216,7 +216,7 @@ export default function PriceCalculator() {
     // Sonderfahrten (Pflicht)
     if (klasse.sonderfahrten) {
       items.push({
-        label: klasse.sonderfahrten.label,
+        label: `${klasse.sonderfahrten.label} (à ${formatEur(klasse.sonderfahrten.preis)})`,
         value: klasse.sonderfahrten.anzahl * klasse.sonderfahrten.preis,
         sub: true,
       })
@@ -255,9 +255,9 @@ export default function PriceCalculator() {
   const grandTotal = fixedTotal + extraTotal
 
   return (
-    <div className="glass-card rounded-2xl overflow-hidden border border-white/8">
+    <div className="glass-card rounded-2xl overflow-hidden border border-black/8">
       {/* Klassen Tabs */}
-      <div className="p-4 border-b border-white/8 bg-surface/50">
+      <div className="p-4 border-b border-black/8 bg-surface-2/50">
         <p className="text-xs text-muted font-semibold uppercase tracking-widest mb-3">
           Führerscheinklasse wählen
         </p>
@@ -360,7 +360,7 @@ export default function PriceCalculator() {
                   Übungsfahrstunden anpassen
                 </p>
                 <div
-                  className="relative p-5 rounded-xl border border-white/8 bg-bg/50 mb-5"
+                  className="relative p-5 rounded-xl border border-black/8 bg-surface-2 mb-5"
                 >
                   <div className="flex justify-between items-baseline mb-4">
                     <span className="font-heading text-4xl font-bold text-accent">

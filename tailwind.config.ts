@@ -9,14 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: '#0A0C14',
-        surface: '#111827',
-        'surface-2': '#1A2235',
-        accent: '#00D4FF',
-        'accent-dark': '#0099CC',
-        muted: '#6B7280',
-        'text-primary': '#F0F4FF',
-        'text-muted': '#9CA3AF',
+        bg: '#F8FAFC',
+        surface: '#FFFFFF',
+        'surface-2': '#F1F5F9',
+        accent: '#0077B6',
+        'accent-dark': '#005A8A',
+        muted: '#64748B',
+        'text-primary': '#0F172A',
+        'text-muted': '#94A3B8',
+        // dark section overrides (hero, footer)
+        'dark-bg': '#0A0C14',
+        'dark-surface': '#111827',
       },
       fontFamily: {
         heading: ['var(--font-fraunces)', 'Georgia', 'serif'],

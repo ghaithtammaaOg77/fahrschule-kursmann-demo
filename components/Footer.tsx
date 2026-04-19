@@ -21,7 +21,7 @@ const seitenLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-surface border-t border-white/5 pt-16 pb-8 overflow-hidden">
+    <footer className="relative border-t border-white/5 pt-16 pb-8 overflow-hidden" style={{ backgroundColor: '#0A0C14', color: '#F0F4FF' }}>
       {/* Background Orb */}
       <div
         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-48 opacity-10 pointer-events-none"

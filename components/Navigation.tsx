@@ -33,7 +33,7 @@ export default function Navigation() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || mobileOpen
-          ? 'bg-bg/95 backdrop-blur-lg border-b border-white/5 shadow-lg shadow-black/20'
+          ? 'bg-surface/95 backdrop-blur-lg border-b border-black/8 shadow-sm shadow-black/5'
           : 'bg-transparent'
       }`}
     >
@@ -80,7 +80,7 @@ export default function Navigation() {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded-lg bg-surface border border-white/8"
+            className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded-lg bg-surface-2 border border-black/10"
             aria-label={mobileOpen ? 'Menü schließen' : 'Menü öffnen'}
             aria-expanded={mobileOpen}
           >
@@ -110,7 +110,7 @@ export default function Navigation() {
         }`}
         aria-hidden={!mobileOpen}
       >
-        <div className="px-4 pb-6 pt-2 border-t border-white/5 bg-bg/98">
+        <div className="px-4 pb-6 pt-2 border-t border-black/8 bg-surface/98">
           <nav className="flex flex-col gap-1" aria-label="Mobile Navigation">
             {navLinks.map((link) => (
               <Link
@@ -119,14 +119,14 @@ export default function Navigation() {
                 className={`px-4 py-3 rounded-lg text-base font-medium transition-colors ${
                   pathname === link.href
                     ? 'bg-accent/10 text-accent border border-accent/20'
-                    : 'text-muted hover:text-text-primary hover:bg-white/5'
+                    : 'text-muted hover:text-text-primary hover:bg-black/5'
                 }`}
               >
                 {link.label}
               </Link>
             ))}
           </nav>
-          <div className="mt-4 pt-4 border-t border-white/5 flex flex-col gap-3">
+          <div className="mt-4 pt-4 border-t border-black/8 flex flex-col gap-3">
             <a
               href="tel:+498191447823"
               className="flex items-center gap-2 px-4 py-3 text-muted hover:text-accent transition-colors"

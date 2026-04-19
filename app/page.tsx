@@ -110,6 +110,7 @@ export default function Home() {
           ========================================= */}
       <section
         className="relative min-h-screen flex flex-col justify-center overflow-hidden noise-texture"
+        style={{ backgroundColor: '#0A0C14', color: '#F0F4FF' }}
         aria-labelledby="hero-heading"
       >
         {/* Animated grid background */}
@@ -220,7 +221,7 @@ export default function Home() {
       {/* =========================================
           STATS
           ========================================= */}
-      <section className="py-8 bg-surface/30" aria-label="Fakten über uns">
+      <section className="py-8 bg-surface border-b border-black/5" aria-label="Fakten über uns">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <StatsCounter />
         </div>
@@ -330,7 +331,7 @@ export default function Home() {
       {/* =========================================
           WARUM KURSMANN
           ========================================= */}
-      <section className="py-24 bg-surface/20" aria-labelledby="vorteile-heading">
+      <section className="py-24 bg-surface" aria-labelledby="vorteile-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left: Text */}
@@ -386,8 +387,8 @@ export default function Home() {
               <div className="relative">
                 {/* Main card */}
                 <div
-                  className="glass-card rounded-2xl p-8 border border-white/8"
-                  style={{ background: 'linear-gradient(135deg, rgba(0,212,255,0.04), rgba(139,92,246,0.04))' }}
+                  className="glass-card rounded-2xl p-8 border border-black/8"
+                  style={{ background: 'linear-gradient(135deg, rgba(0,119,182,0.04), rgba(139,92,246,0.04))' }}
                 >
                   <div className="text-center mb-6">
                     <div className="text-6xl mb-3" aria-hidden="true">🏆</div>
@@ -403,7 +404,7 @@ export default function Home() {
                       { label: 'Gebiet', value: 'Landsberg, Kaufering, Penzing & Umgebung' },
                       { label: 'Klassen', value: 'B, BE, B196, AM, A1, A2, A' },
                     ].map((row) => (
-                      <div key={row.label} className="flex justify-between items-start gap-4 py-2.5 border-b border-white/5 last:border-0 text-sm">
+                      <div key={row.label} className="flex justify-between items-start gap-4 py-2.5 border-b border-black/8 last:border-0 text-sm">
                         <span className="text-muted flex-shrink-0">{row.label}</span>
                         <span className="text-text-primary text-right">{row.value}</span>
                       </div>
