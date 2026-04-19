@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Fraunces, DM_Sans } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
@@ -20,6 +20,12 @@ const dmSans = DM_Sans({
   weight: ['300', '400', '500', '600', '700'],
 })
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+}
+
 export const metadata: Metadata = {
   title: {
     default: 'Fahrschule Kursmann – Führerschein | Landsberg am Lech',
@@ -36,26 +42,18 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Fahrschule Kursmann' }],
   creator: 'Fahrschule Kursmann',
-  metadataBase: new URL('https://fahrschule-kursmann.de'),
+  metadataBase: new URL('https://fahrschule-kursmann-demo.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'de_DE',
-    url: 'https://fahrschule-kursmann.de',
+    url: 'https://fahrschule-kursmann-demo.vercel.app',
     siteName: 'Fahrschule Kursmann',
     title: 'Fahrschule Kursmann – Führerschein | Landsberg am Lech',
     description:
       'Alle Führerscheinklassen, persönliche Betreuung und faire Preise. Deine Fahrschule in Landsberg am Lech.',
-    images: [
-      {
-        url: '/opengraph-image',
-        width: 1200,
-        height: 630,
-        alt: 'Fahrschule Kursmann – Führerschein in Landsberg am Lech',
-      },
-    ],
   },
   robots: {
     index: true,
