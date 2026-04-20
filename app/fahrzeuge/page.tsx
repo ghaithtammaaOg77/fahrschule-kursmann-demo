@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Fahrzeuge – Pkw & Motorräder für die Fahrausbildung',
   description:
     'Die Fahrzeugflotte von Fahrschule Kursmann in Landsberg am Lech – moderne Pkw und Motorräder für optimale Fahrausbildung.',
-  alternates: { canonical: 'https://fahrschule-kursmann.de/fahrzeuge' },
+  alternates: { canonical: '/fahrzeuge' },
 }
 
 // TODO: Durch echte Kundenfahrzeug-Fotos ersetzen (WebP, <100KB, keyword-basierte Dateinamen)
@@ -77,7 +77,7 @@ export default function FahrzeugePage() {
     <>
       {/* Page Hero */}
       <section
-        className="relative pt-32 pb-20 overflow-hidden"
+        className="relative pt-32 pb-20 overflow-hidden page-hero"
         style={{ background: 'linear-gradient(180deg, #080B14 0%, #0A0C14 100%)' }}
         aria-labelledby="fahrzeuge-heading"
       >
@@ -100,7 +100,7 @@ export default function FahrzeugePage() {
           <h1
             id="fahrzeuge-heading"
             className="section-title mb-5"
-            style={{ animation: 'fadeInUp 0.6s ease 0.1s both', fontSize: 'clamp(36px, 5vw, 64px)' }}
+            style={{ animation: 'fadeInUp 0.6s ease 0.1s both', fontSize: 'clamp(36px, 5vw, 64px)', color: '#F0F4FF', WebkitTextFillColor: '#F0F4FF' }}
           >
             Moderne Fahrzeuge,{' '}
             <span className="gradient-text">sicheres Lernen</span>

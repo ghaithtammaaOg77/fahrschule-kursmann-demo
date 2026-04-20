@@ -87,7 +87,7 @@ export default function FaqPage() {
     <>
       {/* Page Hero */}
       <section
-        className="relative pt-32 pb-20 overflow-hidden"
+        className="relative pt-32 pb-20 overflow-hidden page-hero"
         style={{ background: 'linear-gradient(180deg, #080B14 0%, #0A0C14 100%)' }}
         aria-labelledby="faq-heading"
       >
@@ -99,7 +99,7 @@ export default function FaqPage() {
           <h1
             id="faq-heading"
             className="section-title mb-5"
-            style={{ animation: 'fadeInUp 0.6s ease 0.1s both', fontSize: 'clamp(36px, 5vw, 64px)' }}
+            style={{ animation: 'fadeInUp 0.6s ease 0.1s both', fontSize: 'clamp(36px, 5vw, 64px)', color: '#F0F4FF', WebkitTextFillColor: '#F0F4FF' }}
           >
             Häufig gestellte{' '}
             <span className="gradient-text">Fragen</span>
