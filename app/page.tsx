@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Fahrschule Kursmann – Führerschein | Landsberg am Lech',
   description:
     'Fahrschule Kursmann in Landsberg am Lech – alle Führerscheinklassen (B, BE, A1, A2, A, AM, B196). Persönliche Betreuung, faire Preise, hohe Erfolgsquote.',
-  alternates: { canonical: 'https://fahrschule-kursmann.de/' },
+  alternates: { canonical: '/' },
 }
 
 const klassen = [
@@ -322,7 +322,7 @@ export default function Home() {
       {/* =========================================
           WARUM KURSMANN
           ========================================= */}
-      <section className="py-24 bg-surface" aria-labelledby="vorteile-heading">
+      <section className="py-24 bg-surface overflow-hidden" aria-labelledby="vorteile-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left: Text */}

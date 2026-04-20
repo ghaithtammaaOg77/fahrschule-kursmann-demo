@@ -28,6 +28,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -378,7 +379,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--color-text);
+  color: #FFFFFF;
 }
 
 .nav-link:hover::after,
@@ -389,6 +390,15 @@ h1, h2, h3, h4, h5, h6 {
 /* =========================================
    SECTION STYLES
    ========================================= */
+/* Dark hero sections override */
+.page-hero .section-title {
+  color: #F0F4FF;
+}
+
+.page-hero .section-subtitle {
+  color: #94A3B8;
+}
+
 .section-badge {
   display: inline-flex;
   align-items: center;
@@ -425,8 +435,8 @@ h1, h2, h3, h4, h5, h6 {
    ========================================= */
 .wa-float-btn {
   position: fixed;
-  bottom: 28px;
-  right: 28px;
+  bottom: max(20px, calc(env(safe-area-inset-bottom) + 16px));
+  right: max(20px, calc(env(safe-area-inset-right) + 16px));
   z-index: 999;
   width: 58px;
   height: 58px;
