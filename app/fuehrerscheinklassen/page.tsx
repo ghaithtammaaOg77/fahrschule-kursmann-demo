@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Führerscheinklassen & Preise',
   description:
     'Alle Führerscheinklassen bei Fahrschule Kursmann in Landsberg am Lech: B, BE, B196, AM, A1, A2, A – mit interaktivem Preisrechner.',
-  alternates: { canonical: 'https://fahrschule-kursmann.de/fuehrerscheinklassen' },
+  alternates: { canonical: '/fuehrerscheinklassen' },
 }
 
 const klassen = [
@@ -147,7 +147,7 @@ export default function FuehrerscheinklassenPage() {
           PAGE HERO
           ========================================= */}
       <section
-        className="relative pt-32 pb-20 overflow-hidden"
+        className="relative pt-32 pb-20 overflow-hidden page-hero"
         style={{ background: 'linear-gradient(180deg, #080B14 0%, #0A0C14 100%)' }}
         aria-labelledby="klassen-page-heading"
       >
@@ -310,11 +310,11 @@ export default function FuehrerscheinklassenPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 reveal">
             <div className="section-badge mb-4 mx-auto w-fit">Preisrechner</div>
-            <h2 id="rechner-heading" className="section-title mb-4">
+            <h2 id="rechner-heading" className="section-title mb-4" style={{ color: '#F0F4FF', WebkitTextFillColor: '#F0F4FF' }}>
               Berechne deine{' '}
               <span className="gradient-text">Kosten transparent</span>
             </h2>
-            <p className="section-subtitle mx-auto text-center">
+            <p className="section-subtitle mx-auto text-center" style={{ color: '#94A3B8' }}>
               Wähle deine Klasse, passe die Fahrstunden an und sieh sofort, was dein Führerschein ungefähr kosten wird.
             </p>
           </div>

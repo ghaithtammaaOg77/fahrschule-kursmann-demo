@@ -393,10 +393,16 @@ h1, h2, h3, h4, h5, h6 {
 /* Dark hero sections override */
 .page-hero .section-title {
   color: #F0F4FF !important;
+  -webkit-text-fill-color: #F0F4FF !important;
+}
+
+.page-hero .section-title .gradient-text {
+  -webkit-text-fill-color: transparent !important;
 }
 
 .page-hero .section-subtitle {
   color: #94A3B8 !important;
+  -webkit-text-fill-color: #94A3B8 !important;
 }
 
 .section-badge {
