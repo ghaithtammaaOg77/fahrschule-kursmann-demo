@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 
 const navLinks = [
   { href: '/', label: 'Startseite' },
-  { href: '/fuehrerscheinklassen', label: 'Klassen & Preise' },
+  { href: '/fuehrerscheinklassen', label: 'Klassen & Preisrechner' },
   { href: '/fahrzeuge', label: 'Fahrzeuge' },
   { href: '/bewertungen', label: 'Bewertungen' },
   { href: '/faq', label: 'FAQ' },
@@ -17,6 +17,10 @@ export default function Navigation() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const pathname = usePathname()
+
+  // Home page has a light hero — all other pages have dark heroes
+  const isDarkHero = pathname !== '/'
+  const useWhiteText = isDarkHero && !scrolled && !mobileOpen
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 30)
@@ -60,7 +64,8 @@ export default function Navigation() {
                 href={link.href}
                 className={`nav-link px-3 py-2 rounded-md ${
                   pathname === link.href ? 'active' : ''
-                }`}
+                } ${useWhiteText && pathname !== link.href ? 'text-white/75' : ''}`}
+              style={pathname === link.href && scrolled ? { color: 'var(--color-accent)' } : undefined}
               >
                 {link.label}
               </Link>
@@ -69,7 +74,7 @@ export default function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <a href="tel:+498191447823" className="text-muted hover:text-accent transition-colors text-sm font-medium">
+            <a href="tel:+498191447823" className={`${useWhiteText ? 'text-white/75' : 'text-muted'} hover:text-accent transition-colors text-sm font-medium`}>
               08191 447823
             </a>
             <Link href="/kontakt" className="btn-primary text-sm py-2.5 px-5">
